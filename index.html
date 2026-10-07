@@ -125,7 +125,7 @@
     background:var(--surface);
     border:1px solid var(--line);
     border-radius:26px;
-    padding:20px 18px 18px;
+    padding:34px 18px 18px;
     display:flex;
     gap:16px;
     align-items:center;
@@ -146,7 +146,7 @@
   .macro-row .bar > span{display:block; height:100%; border-radius:4px;}
   .macro-row .val{width:56px; text-align:right; color:var(--muted); font-variant-numeric:tabular-nums;}
   .goal-edit{
-    position:absolute; top:14px; right:14px;
+    position:absolute; top:8px; right:12px;
     background:none; border:none; color:var(--muted);
     font-size:11px; text-decoration:underline; text-underline-offset:2px;
     padding:4px;
@@ -1108,7 +1108,7 @@
     if(imagesOK){
       html +=
         '<div class="snap-zone" id="snapZone"><span class="big">📸</span>撳呢度揀相 / 影相<br><span style="font-size:11px;">一張相就得，AI幫你計</span>'+
-        '<input type="file" accept="image/*" capture="environment" id="snapInput"></div>'+
+        '<input type="file" accept="image/*" id="snapInput"></div>'+
         '<div style="text-align:center;margin:-4px 0 14px;"><button class="link-btn" id="switchToText">影唔到？打字講俾我聽</button></div>';
     }else{
       html += '<div class="chat-row"><div class="chat-avatar">🤖</div><div class="chat-bubble">呢度影相分析暫時未開放，不過唔緊要——打字話俾我知食咗咩，一樣幫你計。</div></div>';
